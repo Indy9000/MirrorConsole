@@ -1,7 +1,7 @@
 # MirrorConsole
-Mirrors Console output to a file in a snap
+Mirrors Console output of an F# script to a file 
 
-Include the script like this:
+At the top of your script load this script:
 
     #load "MirrorConsole.fsx"
 
@@ -9,16 +9,19 @@ Specify a folder for the output text files:
 
     let mirror = new MirrorConsole(@"c:\temp\")
     
-output file would look like this: `console.mirror-20150507100912.6548979.txt`
+Output file would look like this: `console.mirror-20150507100912.6548979.txt`
+
+Do your magic ...
 
     Console.WriteLine("before Hello Interactive")
     printfn "before Hello printfn"
     [|0..1000|] |> Array.Parallel.iteri(fun i k -> printfn "[%d] %d" i (k * k))
 
-When you want to revert to just console output
+When you want to revert to just console output:
 
     mirror.Close()
 
+Rest of your magic
 
     Console.WriteLine("after Hello Interactive")
     printfn "after Hello printfn"
