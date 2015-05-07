@@ -1,4 +1,5 @@
-﻿open System
+namespace Tools
+open System
 open System.IO
 
 type TwinWriter(t1:TextWriter, t2:TextWriter) =
@@ -33,7 +34,7 @@ type MirrorConsole(outputPath:string) as self =
 (**
 Usage
 
-let mirror = new MirrorConsole(@"c:\temp\")
+let mirror = new Tools.MirrorConsole(@"c:\temp\")
 
 Console.WriteLine("before Hello World Interactive")
 printfn "before Hello printfn"
