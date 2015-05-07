@@ -7,7 +7,7 @@ At the top of your script load this script:
 
 Specify a folder for the output text files:
 
-    let mirror = new MirrorConsole(@"c:\temp\")
+    let mirror = new Tools.MirrorConsole(@"c:\temp\")
     
 Output file would look like this: `console.mirror-20150507100912.6548979.txt`
 
