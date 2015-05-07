@@ -9,7 +9,7 @@ Specify a folder for the output text files:
 
     let mirror = new Tools.MirrorConsole(@"c:\temp\")
     
-Output file would look like this: `console.mirror-20150507100912.6548979.txt`
+Output file would look like this: `console.mirror-20150507T101118.6239884.txt`
 
 Do your magic ...
 
